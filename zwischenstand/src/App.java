@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class App {
     public static void main(String[] args) throws Exception {
 
@@ -21,5 +23,26 @@ public class App {
             case "Atom Bombe":
                 System.out.println("Der Einbrecher bekommt eine Atombombe.");
         }
+
+        ArrayList<kunde> Kunden = new ArrayList<>();
+        Kunden.add(new kunde("Daniel", "Chowanek", 16, 01));
+        Kunden.add(new kunde("Finn", "Harms", 17, 02));
+        Kunden.add(new kunde("Mattis", "Henzel", 16, 03));
+
+        for (kunde kunde : Kunden) {
+            System.out.println(kunde);
+        }
+
+        String[] andereStandorte = new String[3];
+        andereStandorte[0] = "Berlin";
+        andereStandorte[1] = "Stuttgart";
+        andereStandorte[2] = "Schwerin";
+
+        System.out.println(andereStandorte[0]);
+        System.out.println(andereStandorte[1]);
+        System.out.println(andereStandorte[2]);
+
+        
+
     }
 }
