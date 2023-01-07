@@ -7,6 +7,10 @@ public class einbrecher extends mensch{
         setEinbruchswerkzeug(einbruchswerkzeug);
     }
 
+    public void zeigeDaten(){
+        System.out.println(getVorname()+" "+getNachname()+" "+getAlter()+" "+getEinbruchswerkzeug());
+    }
+
     public void setEinbruchswerkzeug(String einbruchswerkzeug) {
         this.einbruchswerkzeug = einbruchswerkzeug;
     }

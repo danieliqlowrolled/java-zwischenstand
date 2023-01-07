@@ -6,6 +6,10 @@ public class bankmitarbeiter extends mensch{
         super(vorname, nachname, alter);
         setMitarbeiternummer(mitarbeiternummer);
     }
+
+    public void zeigeDaten(){
+        System.out.println(getVorname()+" "+getNachname()+" "+getAlter()+" "+getMitarbeiternummer());
+    }
     
     public void setMitarbeiternummer(Integer mitarbeiternummer) {
         this.mitarbeiternummer = mitarbeiternummer;

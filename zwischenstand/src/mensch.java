@@ -1,4 +1,4 @@
-public class mensch {
+public abstract class mensch {
     String vorname;
     String nachname;
     Integer alter;
@@ -7,8 +7,10 @@ public class mensch {
         setVorname(vorname);
         setNachname(nachname);
         setAlter(alter);
-        
+
     }
+
+    public abstract void zeigeDaten();
 
     public void setVorname(String vorname) {
         this.vorname = vorname;
